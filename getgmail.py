@@ -7,10 +7,8 @@ mail.list()
 mail.select("inbox") # connect to inbox.
 
 
-#result, data = mail.search(None, '(HEADER Subject "devops" NOT Subject "Dice JobAlert - DevOps" NOT Subject "Dice JobAlert - linux devops" NOT FROM "jagent@route.monster.com" SINCE "01-Mar-2015")')
-#result, data = mail.search(None, '(HEADER FROM "member@linkedin.com" SINCE "01-Jan-2015")')
-#result, data = mail.search(None, '(HEADER FROM "mailer-daemon" FROM "postmaster" SINCE "01-Aug-2015")')
-result, data = mail.search(None, '(HEADER FROM "@naukri.com" SINCE "27-Jan-2016")')
+
+result, data = mail.search(None, '(HEADER FROM "@somedomain.com.com" SINCE "27-Jan-2016")')
 #result, data = mail.search(None, '(HEADER FROM "@monsterindia.com" SINCE "01-Aug-2015")')
 
 for num in reversed(data[0].split()):
