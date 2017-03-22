@@ -21,28 +21,9 @@ def mail(to, subject, attach, recruitername ):
    text = """
 Hi  %s
 
- How are you doing. You  had sent me a email throuth Naukri regarding the DevOps role.
-
-
-
-         Few of the important technologies i have been working on :
-
-  1.        AWS (  EC2 , ELB , CloudFront, Elasticcache , S3 , RDS, Route53  , autoscaling and used cloudformation)
-  2.       HAproxy , Nginx  , apache
-  3.       mysql ( mater-salve replication)
-  4.       ELK ( elasticsearch , Logstash , Kibana )
-  5.       Nagios  and plugin development
-  6.       Jenkins , puppet and Ansible
-  7.       scripting languages in Python , perl , shell scripting
-  ----------------------------------------------------------------------------------------------
-
-  ( You may forward this to any other HR/ recruiter that my be looking out for my skill sets )
-
-
-   
- Please find attached my resume 
-
- It would be nice to hear from you
+ this is a dummy email , 
+ 
+ i have hattached a dummy document . 
 
  Regards
  xyz
@@ -82,6 +63,6 @@ for i in emaillist.readlines()[0:]:
     #sleep(randint(1,3))
     print "%s " % match.group(0)
     hrname =  str(re.split("\.|_|-", match.group(0).split('@')[0] )[0])
-    #print "%s " % hrname
+    
     #hrname = ''
-    mail( match.group(0) , "Re:  Looking for job opportunities in yyeerrdd ","/scripts/resume.pdf" , hrname )
+    mail( match.group(0) , "Re:  dummy subject line here  ","/scripts/dummydoc.pdf" , hrname )
